@@ -1,0 +1,98 @@
+
+a{
+    text-decoration: none;
+}
+p{
+    margin: 0;
+
+}
+body{
+    margin: 0;
+    padding-top: 90px;
+    padding-left: 220px;
+    padding-right: 2%;
+    background-color: rgb(249, 250, 250);
+}
+.videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.video {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+.video-template {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.video-info {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 10px;
+}
+.duration{
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 500;
+    padding: 4px 2px;
+    position: absolute;
+    right: 5px;
+    bottom: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.imgp {
+    width: 100%;
+    height: 100%;
+}
+.imgp:hover,
+.title:hover,
+.owner:hover,
+.logo:hover{
+    cursor: pointer;
+}
+.logo{
+    width: 100%;
+    border-radius: 50%;
+    margin: 2px;
+}
+.title{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 100%;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.owner{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 80%;
+    font-weight: 400;
+    color: gray;
+}
+.views{
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 80%;
+    font-weight: 400;
+    color: gray;
+}
+@media screen and (max-width: 1200px) {
+    .videos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .videos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 600px) {
+    .videos {
+        grid-template-columns: 1fr ;
+    }
+}
